@@ -1,0 +1,27 @@
+$containerWidth: 1224px;
+$baseFontSize: 16px;
+
+//colors
+$green:#68B738;
+$greenHover:#5EAA2F;
+$grayBackground:#F2F2F2;
+$grayBackgroundDark:#EAEAEA;
+$darkerGray:#CDCDCD;
+$lineGray:#DCDCDC;
+$black:#000000;
+$white:#FFFFFF;
+$buttonHoverGray: #EBEBEB;
+$inputGray:#E7E7E7;
+$inputGrayFocus:#444444;
+$inputRed:#FF8282;
+$checkboxGrayHover:#BABABA;
+
+//normalize
+@import url("https://github.com/necolas/normalize.css");
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import "layout";
+
+//components
+// @import "components/header.scss";
