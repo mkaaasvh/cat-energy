@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cat energy - форма</title>
+    <title>cat energy - главная страница</title>
 
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
@@ -15,6 +15,204 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+
+<div class="wrapper">
+  <header class="page__header">
+    <div class="container header__container">
+      <a href="index.html" class="header__logo">
+        <img src="./img/logo/logo__header.png" width ="202" height="59" alt="header logo" class="header__img">
+      </a>
+
+      <nav class="menu__header">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="index.html" class="menu__link">главная</a>
+          </li>
+          <li class="menu__item">
+            <a href="catalog.html" class="menu__link">каталог продукции</a>
+          </li>
+          <li class="menu__item">
+            <a href="form.html" class="menu__link">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page__main">
+
+    <section class="info">
+      <div class="container info__container">
+        <h1 class="info__title">подбор программы</h1>
+        <p class="info__desc">
+          заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
+
+        <form action="#" class="form info__form" method="post">
+          <div class="form__row">
+            <ul class="row__list">
+              <li class="row__items">
+                <div class="input__title">имя:*</div>
+                <input type="text" placeholder="БАРСИК" class="form__input">
+              </li>
+              <li class="row__items">
+                <div class="input__title">вес (кг):*</div>
+                <input type="text" placeholder="7" class="form__input">
+              </li>
+              <li class="row__items">
+                <div class="input__title">возраст (лет):</div>
+                <input type="text" placeholder="7" class="form__input">
+              </li>
+            </ul>
+          </div>
+        </form>
+
+        <fieldset class="choice__weight">
+          <ul class="weight__list">
+            <li class="weight__item">
+              <label class="radio">
+                <input type="radio" name="option" value="diet" class="element" checked>
+                <div class="radio__visible"></div>
+                <div class="radio__title">похудение</div>
+              </label>
+            </li>
+            <li class="weight__item">
+              <label class="radio">
+                <input type="radio" name="option" value="weight gain" class="element">
+                <div class="radio__visible"></div>
+                <div class="radio__title">набор массы</div>
+              </label>
+            </li>
+            <li class="weight__item">
+              <label class="radio">
+                <input type="radio" name="option" value="don't know" class="element">
+                <div class="radio__visible"></div>
+                <div class="radio__title">не знаю (нужен ваш совет)</div>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container contacts__container">
+        <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+
+        <form action="#" class="form contacts__form" method="post">
+          <div class="form__row contacts__form__row">
+            <ul class="row__list contacts__row__list">
+              <li class="row__items contacts__row__items">
+                <div class="input__title contacts__input__title">e-mail:*</div>
+                <input type="text" placeholder="KULACHEV@GMAIL.COM" class="form__input contacts__form__input">
+              </li>
+              <li class="row__items contacts__row__items">
+                <div class="input__title contacts__input__title">телефон:*</div>
+                <input type="text" placeholder="8 (960) 900-60-90" class="form__input contacts__form__input">
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="details">
+      <div class="container details__container">
+        <h2 class="details__title">комментарий</h2>
+
+        <form action="#" class="details__form" method="post">
+          <div class="form__row details__form__row">
+            <textarea placeholder="расскажите обо всех повадках кота" class="form__input form__input--textarea" name="textarea"></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="additional">
+      <div class="container additional__container">
+        <h2 class="additional__title">Дополнительно</h2>
+
+        <fieldset class="choice__additional">
+          <ul class="additional__list">
+            <li class="additional__item">
+              <label class="checkbox">
+                <input type="checkbox" name="additional" value="sweetener" class="checkbox__elem">
+                <div class="checkbox__visible"></div>
+                <div class="checkbox__title">сахарозаменитель</div>
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="checkbox">
+                <input type="checkbox" name="additional" value="water" class="checkbox__elem">
+                <div class="checkbox__visible"></div>
+                <div class="checkbox__title">питьевая вода</div>
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="checkbox">
+                <input type="checkbox" name="additional" value="milk" class="checkbox__elem">
+                <div class="checkbox__visible"></div>
+                <div class="checkbox__title">молоко</div>
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="checkbox">
+                <input type="checkbox" name="additional" value="vitamins" class="checkbox__elem">
+                <div class="checkbox__visible"></div>
+                <div class="checkbox__title">витамины</div>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit" class="btn btn__form">отправить заявку</button>
+        <span class="form__desc">* — Обязательные поля</span>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="container map__container">
+        <div class="map__contacts">
+          <p class="map__slogan">приглашаем к сотрудничеству дилеров!</p>
+          <p class="map__address">
+            <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="address__city">Санкт-Петербург</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page__footer">
+    <div class="container footer__container">
+      <a href="index.html" class="footer__logo">
+        <img src="./img/logo/footer-logo.svg" width="128" height="24" alt="footer logo" class="footer__img">
+      </a>
+
+      <ul class="socials">
+        <li class="socials__item socials__item--icon--vk">
+          <a href="#" class="socials__link">vk</a>
+        </li>
+        <li class="socials__item socials__item--icon--inst">
+          <a href="#" class="socials__link">inst</a>
+        </li>
+        <li class="socials__item socials__item--icon--fb">
+          <a href="#" class="socials__link">fb</a>
+        </li>
+      </ul>
+
+      <div class="authors">
+        <span class="author">HTML Academy</span>
+        <a href="#" class="author__logo">
+          <img src="./img/logo/logo html.svg" alt="author__logo" class="author__img">
+        </a>
+      </div>
+
+    </div>
+  </footer>
+</div>
 
 </body>
 </html>
