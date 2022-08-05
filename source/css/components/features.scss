@@ -1,0 +1,45 @@
+.features {
+    margin-bottom: 34px;
+}
+
+.features__title {
+    font-size: 60px;
+    margin-bottom: 63px;
+}
+
+.features__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features__item {
+    height: 280px;
+    width: 245px;
+
+    &--one {
+    background:url("/./source/img/background/1.svg") top left 82% no-repeat;
+    }
+
+    &--two {
+    background:url("/./source/img/background/2.svg") top right no-repeat;
+    }
+
+    &--three {
+    background:url("/./source/img/background/3.svg") top right no-repeat;
+    }
+
+    &--four {
+    background:url("/./source/img/background/4.svg") top right no-repeat;
+    }
+
+}
+
+.feature__icon {
+    margin-bottom: 41px;
+}
+
+.feature__desc {
+    font-family: Arial;
+    color: $inputGrayFocus;
+}

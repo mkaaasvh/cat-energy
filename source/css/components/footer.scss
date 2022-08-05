@@ -1,0 +1,16 @@
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 149px;
+}
+
+.footer__copyright {
+    display: flex;
+}
+
+.copyright__text {
+    font-family: Arial;
+    color: #444444;
+    margin-right: 22px;
+}

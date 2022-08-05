@@ -1,0 +1,82 @@
+.example {
+    background-color: $grayBackground;
+}
+
+.example__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.example__inner {
+    display: flex;
+    flex-direction: column;
+    width: 436px;
+}
+
+.example__title {
+    font-size: 60px;
+    background-color: $white;
+    padding-left: 126px;
+    padding-bottom: 68px;
+}
+
+.example__desc {
+    font-family: Arial;
+    color: $inputGrayFocus;
+    margin-bottom: 80px;
+    margin-top: 27px;
+}
+
+.example__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+
+.example__result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.text {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    border: 1px solid $darkerGray;
+    
+    &--one {
+        padding: 15px 57px;
+    }
+
+    &--two {
+        padding: 15px 37px;
+    }
+}
+
+.caption {
+    background-color: #F2F2F2;
+    font-family: Arial;
+    font-weight: 400;
+    color: #444444;
+    font-size: 14px;
+    width: 145px;
+    padding: 9px;
+    text-align: center;
+    margin-top: -15px;
+
+    &--one {
+        width: 115px;
+    }
+}
+
+.example__cost {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.price {
+    padding-left: 63px;
+}

@@ -1,4 +1,4 @@
-$containerWidth: 1224px;
+$containerWidth: 1260px;
 $baseFontSize: 16px;
 
 //colors
@@ -17,11 +17,28 @@ $inputRed:#FF8282;
 $checkboxGrayHover:#BABABA;
 
 //normalize
-@import url("https://github.com/necolas/normalize.css");
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 
 //setups
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import "layout";
 
 //components
-// @import "components/header.scss";
+@import "components/header.scss";
+@import "components/hero.scss";
+@import "components/advantages.scss";
+@import "components/features.scss";
+@import "components/example.scss";
+@import "components/slider.scss";
+@import "components/map.scss";
+@import "components/footer.scss";
+@import "components/socials.scss";
+@import "components/info.scss";
+@import "components/choice.scss";
+@import "components/contacts.scss";
+@import "components/details.scss";
+@import "components/additional.scss";
+@import "components/product.scss";
+@import "components/more.scss";
+@import "components/extra__product.scss";
+@import "components/offer.scss";

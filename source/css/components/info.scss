@@ -1,0 +1,51 @@
+.info {
+    margin-bottom: 70px;
+}
+
+.info__title {
+    font-size: 60px;
+}
+
+.info__desc {
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 27%;
+    margin-bottom: 50px;
+}
+
+.info__form__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input__title {
+    font-size: 20px;
+    color: #444444;
+    text-transform: uppercase;
+    margin-right: 14px;
+}
+
+.form__input {
+    font-family: "Oswald";
+    font-size: 20px;
+    color: #444444;
+    border: 1px solid #E7E7E7;
+    width: 436px;
+    height: 52px;
+    padding: 10px 19px;
+
+    &--one {
+        width: 506px;
+    }
+
+    &--two {
+        width: 475px;
+    }
+}

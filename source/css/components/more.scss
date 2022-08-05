@@ -1,0 +1,29 @@
+.more__item {
+    background-color: #ffffff;
+    height: 431px;
+    width: 245px;
+    padding: 165px 37px 39px;
+    border: 2px solid #F2F2F2;
+}
+
+.more__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #222222;
+    width: 145px;
+    text-align: center;
+}
+
+.more__desc {
+    font-family: arial;
+    text-align: center;
+    color: #444444;
+    margin-bottom: 57px;
+}

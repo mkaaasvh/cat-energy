@@ -1,0 +1,23 @@
+.details__title {
+  position: relative;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.details__title::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #68B738;
+  width: 94px;
+  left: -11%;
+  top: 49%;
+}
+.details__title::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #68B738;
+  width: 1145px;
+  top: 49%;
+  right: -11%;
+}

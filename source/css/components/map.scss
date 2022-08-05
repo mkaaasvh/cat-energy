@@ -1,0 +1,35 @@
+.map {
+    background-color: $grayBackgroundDark; 
+}
+
+.map__container {
+    height: 421px;
+    padding-top: 107px;
+}
+
+.map__contacts {
+    display: flex;
+    width: 600px;
+    height: 212px;
+    background-color: #FFFFFF;
+    padding: 63px 83px;
+}
+
+.map__slogan {
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 50%;
+    margin-right: 63px;
+}
+
+.map__address {
+    font-family: Arial;
+    color: #444444;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.address__street {
+    margin-bottom: 20px;
+}

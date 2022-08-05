@@ -1,0 +1,33 @@
+.hero__container {
+    padding-left: 77px;
+    position: relative;
+
+    &::after {
+        content: url("/./source/img/decor/can.png");
+        position: absolute;
+        top: -20%;
+        right: 19%;
+    }
+}
+
+.hero__title {
+    font-size: 60px;
+    width: 40%;
+    line-height: 1.2;
+    margin-bottom: 31px;
+}
+
+.hero__subtitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 64px;
+}
+
+.hero__button {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $white;
+    padding: 14px 32px;
+    background-color: $green;
+}

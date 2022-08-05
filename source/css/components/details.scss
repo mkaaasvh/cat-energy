@@ -1,0 +1,38 @@
+.details {
+    margin-bottom: 60px;
+}
+
+.details__title {
+    position: relative;
+    font-size: 36px;
+    margin-bottom: 50px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #68B738;
+        width: 94px;
+        left: -11%;
+        top: 49%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #68B738;
+        width: 1145px;
+        top: 49%;
+        right: -11%;
+    }
+}
+
+.form__input {
+
+    &--textarea {
+        text-transform: uppercase;
+        height: 174px;
+        width: 1260px;
+    }
+}

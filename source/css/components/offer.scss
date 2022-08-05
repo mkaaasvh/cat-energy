@@ -1,0 +1,20 @@
+.special__offer {
+    background: url("/source/img/background/gift-photo-desktop.png") no-repeat;
+    width: 245px;
+    height: 289px;
+    padding:184px 42px 42px;
+    position: relative;
+
+    &::before {
+        content: url("/source/img/decor/icon_gift.svg");
+        position: absolute;
+        top: 10%;
+        right: 30%;
+    }
+}
+
+.special__offer__desc {
+    font-family: arial;
+    color: #fff;
+    text-align: center;
+}
