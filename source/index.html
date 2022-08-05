@@ -17,10 +17,10 @@
 <body>
 
 <div class="wrapper">
-  <header class="page__header">
+  <header class="page__header page__header--main">
     <div class="container header__container">
       <a href="index.html" class="header__logo">
-        <img src="./img/logo/logo__header.png" width ="202" height="59" alt="header logo" class="header__img">
+        <img src="./img/logo/logo-desktop.svg" width ="202" height="59" alt="header logo" class="header__img">
       </a>
 
       <nav class="menu__header">
@@ -37,9 +37,6 @@
         </ul>
       </nav>
     </div>
-  </header>
-
-  <main class="page__main">
 
     <secction class="hero">
       <div class="container hero__container">
@@ -48,16 +45,17 @@
         <a href="form.html" class="hero__button">подобрать программу</a>
       </div>
     </secction>
+  </header>
 
+  <main class="page__main">
     <section class="advantages">
       <div class="container advantages__container">
         <ul class="advantages__list">
-          <li class="advantages__list">
-            <div class="advantages__list__header">
+          <li class="advantages__item">
+            <div class="advantages__item__header">
               <img src="./img/icon/cat.svg" width ="100" height="100" alt="cat icon" class="advanatges__icon">
               <div class="advanatges__header__title">похудение</div>
             </div>
-
             <div class="advanatges__content">
               <p class="advantages__description">
                 Ваш кот весит больше собаки и почти утратил способность
@@ -69,12 +67,13 @@
             <div class="advanatges__button__container">
               <a href="catalog.html" class="advanatges__button">
                 <p class="advanatges__button__title">каталог slim</p>
-                <img src="./img/icon/arrow.svg" width="240" height="12" alt="arrow to catalog" class="advantages__button--icon">
+                <img src="./img/icon/arrow.svg" width="95" height="12" alt="arrow to catalog" class="advantages__button--icon">
               </a>
             </div>
           </li>
-          <li class="advantages__list">
-            <div class="advantages__list__header">
+
+          <li class="advantages__item">
+            <div class="advantages__item__header">
               <img src="./img/icon/tiger.svg" width ="134" height="100" alt="tiger icon" class="advanatges__icon">
               <div class="advanatges__header__title">набор массы</div>
             </div>
@@ -90,7 +89,7 @@
             <div class="advanatges__button__container">
               <a href="catalog.html" class="advanatges__button">
                 <p class="advanatges__button__title">каталог pro</p>
-                <img src="./img/icon/arrow.svg" width="240" height="12" alt="arrow to catalog" class="advantages__button--icon">
+                <img src="./img/icon/arrow.svg" width="95" height="12" alt="arrow to catalog" class="advantages__button--icon">
               </a>
             </div>
 
@@ -105,7 +104,7 @@
         <ul class="features__list">
           <li class="features__item features__item--one">
             <img src="./img/icon/leaf.svg" width="80" height="80" alt="feature leaf icon" class="feature__icon">
-            <p class="feature__desc">
+            <p class="feature__desc feature__desc--one">
               Функциональное питание
               содержит только полезные
               питательные вещества.
@@ -140,9 +139,9 @@
     </section>
 
     <section class="example">
-      <div class="container example__conatiner">
+      <h2 class="example__title">Живой пример</h2>
+      <div class="container example__container">
         <div class="example__inner">
-          <h2 class="example__title">Живой пример</h2>
           <p class="example__desc">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой
             обычный корм на Cat Energy Slim. Отличный результат
@@ -151,19 +150,19 @@
           </p>
           <div class="example__wrapper">
             <div class="example__result">
-              <span class="text">5 кг</span>
-              <span class="caprion">снижение веса</span>
+              <span class="text text--one">5 кг</span>
+              <span class="caption caption--one">снижение веса</span>
             </div>
 
             <div class="example__result">
-              <span class="text">60 дней</span>
-              <span class="caprion">затрачено времени</span>
+              <span class="text text--two">60 дней</span>
+              <span class="caption">затрачено времени</span>
             </div>
+          </div>
 
-            <div class="example__cost">
-              Затраты на питание:
-              <span>15 000 РУБ.</span>
-            </div>
+          <div class="example__cost">
+            Затраты на питание:
+            <span class="price">15 000 РУБ.</span>
           </div>
         </div>
 
@@ -173,15 +172,14 @@
               <img src="./img/example/cat__one.png" alt="cat one" class="slider__picture">
             </div>
             <div class="slider__image--wrapper">
-              <img src="./img/example/cat__two.png" alt="cat two" class="slider__picture">
+              <img src="./img/example/cat__two.png" alt="cat two" class="slider__picture slider__picture--two">
             </div>
           </div>
 
           <div class="slider__buttons">
             <span class="slider__label slider__label--before" tabindex="0">было</span>
-            <div class="slider__bar">
-              <div class="slider__toggle"></div>
-            </div>
+            <div class="slider__bar"></div>
+            <div class="toggle" tabindex="0"></div>
             <span class="slider__label slider__label--after" tabindex="0">стало</span>
           </div>
         </div>
@@ -201,33 +199,42 @@
     </section>
   </main>
 
-  <footer class="page__footer">
+    <footer class="footer">
     <div class="container footer__container">
-      <a href="index.html" class="footer__logo">
-        <img src="./img/logo/footer-logo.svg" width="128" height="24" alt="footer logo" class="footer__img">
-      </a>
+        <div class="footer__col"> 
+            <a href="main_page.html" class="logo">  
+                <img src="./img/logo/footer-logo.svg" alt="logo company" class="logo__img"> 
+            </a>
+        </div>
 
-      <ul class="socials">
-        <li class="socials__item socials__item--icon--vk">
-          <a href="#" class="socials__link">vk</a>
-        </li>
-        <li class="socials__item socials__item--icon--inst">
-          <a href="#" class="socials__link">inst</a>
-        </li>
-        <li class="socials__item socials__item--icon--fb">
-          <a href="#" class="socials__link">fb</a>
-        </li>
-      </ul>
+        <div class="footer__socials">
+            <ul class="socials__list">
+                <li class="socials__item socials__item--icon--vk">
+                    <a href="https://vk.com/marysa3015" class="socials__link">
+                      <img src="./img/socials/icon_vkontakte.svg" alt="vk icon" class="social__icon">
+                    </a>
+                </li>
+                <li class="socials__item socials__item--icon--inst">
+                    <a href="https://ru-ru.facebook.com/" class="socials__link">
+                      <img src="./img/socials/icon_instagram.svg" alt="instagram icon" class="social__icon">
+                    </a>
+                </li>
+                <li class="socials__item socials__item--icon--fb">
+                    <a href="https://www.instagram.com/" class="socials__link">
+                      <img src="./img/socials/icon_facebook.svg" alt="facebook icon" class="social__icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-      <div class="authors">
-        <span class="author">HTML Academy</span>
-        <a href="#" class="author__logo">
-          <img src="./img/logo/logo html.svg" alt="author__logo" class="author__img">
-        </a>
-      </div>
-
+        <div class="footer__copyright">
+          <div class="copyright__text">HTML Academy</div>
+          <a href="index.html" class="copyright__logo">
+            <img src="./img/logo/html__logo.svg" alt="html logo" class="img__logo">
+          </a>
+        </div>
     </div>
-  </footer>
+    </footer>
 </div>
 
 </body>

@@ -20,11 +20,11 @@
     <header class="page__header">
       <div class="container header__container">
         <a href="index.html" class="header__logo">
-          <img src="./img/logo/logo__header.png" width ="202" height="59" alt="header logo" class="header__img">
+          <img src="./img/logo/logo-desktop.svg" width ="202" height="59" alt="header logo" class="header__img">
         </a>
-
+  
         <nav class="menu__header">
-          <ul class="menu__list">
+          <ul class="menu__list menu__list--form">
             <li class="menu__item">
               <a href="index.html" class="menu__link">главная</a>
             </li>
@@ -42,13 +42,9 @@
     <main class="page__main">
       <section class="product">
         <div class="container product__container">
-          <h2 class="product__title">каталог продукции</h2>
+          <h2 class="products__title">Каталог продукции</h2>
           <ul class="product__list">
             <li class="product__item">
-              <a href="#" class="product__link">
-                <img src="./img/products/cat__energy__pro__500.png" alt="cat energy pro 500 with chicken" class="product__img">
-              </a>
-
               <div class="product__info">
                 <h3 class="product__title">cat energy pro 500 г</h3>
                 <table class="product__desc">
@@ -73,10 +69,6 @@
             </li>
 
             <li class="product__item">
-              <a href="#" class="product__link">
-                <img src="./img/products/cat__energy__pro__1000.png" alt="cat energy pro 1000 with chicken" class="product__img">
-              </a>
-
               <div class="product__info">
                 <h3 class="product__title">cat energy pro 1000 г</h3>
                 <table class="product__desc">
@@ -100,12 +92,7 @@
               </div>
             </li>
 
-
             <li class="product__item">
-              <a href="#" class="product__link">
-                <img src="./img/products/cat__energy__pro__500__fish.png" alt="cat energy pro 1000 with fish" class="product__img">
-              </a>
-
               <div class="product__info">
                 <h3 class="product__title">cat energy pro 1000 г</h3>
                 <table class="product__desc">
@@ -129,12 +116,7 @@
               </div>
             </li>
 
-
             <li class="product__item">
-              <a href="#" class="product__link">
-                <img src="./img/products/cat__energy__pro__1000__fish.png" alt="cat energy pro 1000 with fish" class="product__img">
-              </a>
-
               <div class="product__info">
                 <h3 class="product__title">cat energy pro 1000 г</h3>
                 <table class="product__desc">
@@ -158,12 +140,7 @@
               </div>
             </li>
 
-
             <li class="product__item">
-              <a href="#" class="product__link">
-                <img src="./img/products/Cat_Energy_slim_500.png" alt="cat energy slim 500 with buckwheat" class="product__img">
-              </a>
-
               <div class="product__info">
                 <h3 class="product__title">cat energy slim 500 г</h3>
                 <table class="product__desc">
@@ -187,12 +164,7 @@
               </div>
             </li>
 
-
             <li class="product__item">
-              <a href="#" class="product__link">
-                <img src="./img/products/Cat_Energy_slim_1000.png" alt="cat energy pro 1000 with buckwheat" class="product__img">
-              </a>
-
               <div class="product__info">
                 <h3 class="product__title">cat energy slim 1000 г</h3>
                 <table class="product__desc">
@@ -216,12 +188,7 @@
               </div>
             </li>
 
-
             <li class="product__item">
-              <a href="#" class="product__link">
-                <img src="./img/products/Cat_Energy_slim_500__rice.png" alt="cat energy pro 500 with rice" class="product__img">
-              </a>
-
               <div class="product__info">
                 <h3 class="product__title">cat energy slim 500 г</h3>
                 <table class="product__desc">
@@ -260,7 +227,9 @@
       <section class="extra__product">
         <div class="container extra__product__container">
           <h3 class="extra__product__title">Дополнительные товары</h3>
-          <ul class="extra__product__list">
+
+          <div class="offers__wrapper">
+            <ul class="extra__product__list">
             <li class="extra__product__item">
               <div class="extra__product__content">
                 <h3 class="extra__product__name">cахарозаменитель</h3>
@@ -268,8 +237,8 @@
                   <span class="extra__product__amount">1 упаковка (100 г)</span>
                   <span class="extra__product__cost">200 Р.</span>
                 </p>
+                <button class="extra__order">заказать</button>
               </div>
-              <a href="" class="product__order product__order--longer">заказать</a>
             </li>
 
             <li class="extra__product__item">
@@ -280,7 +249,7 @@
                   <span class="extra__product__cost">50 Р.</span>
                 </p>
               </div>
-              <a href="" class="product__order product__order--longer">заказать</a>
+              <button class="extra__order">заказать</button>
             </li>
 
             <li class="extra__product__item">
@@ -291,7 +260,7 @@
                   <span class="extra__product__cost">100 Р.</span>
                 </p>
               </div>
-              <a href="" class="product__order product__order--longer">заказать</a>
+              <button class="extra__order">заказать</button>
             </li>
 
             <li class="extra__product__item">
@@ -302,17 +271,19 @@
                   <span class="extra__product__cost">300 Р.</span>
                 </p>
               </div>
-              <a href="" class="product__order product__order--longer">заказать</a>
+              <button class="extra__order">заказать</button>
             </li>
-          </ul>
+            </ul>
 
-          <div class="special__offer">
+            <div class="special__offer">
             <p class="special__offer__desc">
               Закажите все
               и получите чехол для
               кота в подарок!
             </p>
           </div>
+          </div>
+
         </div>
       </section>
 
@@ -327,36 +298,44 @@
           </div>
         </div>
       </section>
-
     </main>
 
-    <footer class="page__footer">
+    <footer class="footer">
       <div class="container footer__container">
-        <a href="index.html" class="footer__logo">
-          <img src="./img/logo/footer-logo.svg" width="128" height="24" alt="footer logo" class="footer__img">
-        </a>
-
-        <ul class="socials">
-          <li class="socials__item socials__item--icon--vk">
-            <a href="#" class="socials__link">vk</a>
-          </li>
-          <li class="socials__item socials__item--icon--inst">
-            <a href="#" class="socials__link">inst</a>
-          </li>
-          <li class="socials__item socials__item--icon--fb">
-            <a href="#" class="socials__link">fb</a>
-          </li>
-        </ul>
-
-        <div class="authors">
-          <span class="author">HTML Academy</span>
-          <a href="#" class="author__logo">
-            <img src="./img/logo/logo html.svg" alt="author__logo" class="author__img">
-          </a>
-        </div>
-
+          <div class="footer__col"> 
+              <a href="main_page.html" class="logo">  
+                  <img src="./img/logo/footer-logo.svg" alt="logo company" class="logo__img"> 
+              </a>
+          </div>
+  
+          <div class="footer__socials">
+              <ul class="socials__list">
+                  <li class="socials__item socials__item--icon--vk">
+                      <a href="https://vk.com/marysa3015" class="socials__link">
+                        <img src="./img/socials/icon_vkontakte.svg" alt="vk icon" class="social__icon">
+                      </a>
+                  </li>
+                  <li class="socials__item socials__item--icon--inst">
+                      <a href="https://ru-ru.facebook.com/" class="socials__link">
+                        <img src="./img/socials/icon_instagram.svg" alt="instagram icon" class="social__icon">
+                      </a>
+                  </li>
+                  <li class="socials__item socials__item--icon--fb">
+                      <a href="https://www.instagram.com/" class="socials__link">
+                        <img src="./img/socials/icon_facebook.svg" alt="facebook icon" class="social__icon">
+                      </a>
+                  </li>
+              </ul>
+          </div>
+  
+          <div class="footer__copyright">
+            <div class="copyright__text">HTML Academy</div>
+            <a href="index.html" class="copyright__logo">
+              <img src="./img/logo/html__logo.svg" alt="html logo" class="img__logo">
+            </a>
+          </div>
       </div>
-    </footer>
+      </footer>
   </div>
 
 </body>

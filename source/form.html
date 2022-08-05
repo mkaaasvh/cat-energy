@@ -20,11 +20,11 @@
   <header class="page__header">
     <div class="container header__container">
       <a href="index.html" class="header__logo">
-        <img src="./img/logo/logo__header.png" width ="202" height="59" alt="header logo" class="header__img">
+        <img src="./img/logo/logo-desktop.svg" width ="202" height="59" alt="header logo" class="header__img">
       </a>
 
       <nav class="menu__header">
-        <ul class="menu__list">
+        <ul class="menu__list menu__list--form">
           <li class="menu__item">
             <a href="index.html" class="menu__link">главная</a>
           </li>
@@ -40,25 +40,25 @@
   </header>
 
   <main class="page__main">
-
     <section class="info">
       <div class="container info__container">
-        <h1 class="info__title">подбор программы</h1>
+        <h1 class="info__title">Подбор программы</h1>
         <p class="info__desc">
           заполните анкету, и мы подберем
           программу питания для вашего кота
         </p>
 
-        <form action="#" class="form info__form" method="post">
+        <div class="info__form__wrapper">
+          <form action="#" class="form info__form" method="post">
           <div class="form__row">
             <ul class="row__list">
               <li class="row__items">
                 <div class="input__title">имя:*</div>
-                <input type="text" placeholder="БАРСИК" class="form__input">
+                <input type="text" placeholder="БАРСИК" class="form__input form__input--one"> 
               </li>
               <li class="row__items">
                 <div class="input__title">вес (кг):*</div>
-                <input type="text" placeholder="7" class="form__input">
+                <input type="text" placeholder="7" class="form__input form__input--two">
               </li>
               <li class="row__items">
                 <div class="input__title">возраст (лет):</div>
@@ -93,6 +93,8 @@
             </li>
           </ul>
         </fieldset>
+        </div>
+        
       </div>
     </section>
 
@@ -119,7 +121,7 @@
 
     <section class="details">
       <div class="container details__container">
-        <h2 class="details__title">комментарий</h2>
+        <h2 class="details__title">Комментарий</h2>
 
         <form action="#" class="details__form" method="post">
           <div class="form__row details__form__row">
@@ -133,11 +135,11 @@
       <div class="container additional__container">
         <h2 class="additional__title">Дополнительно</h2>
 
-        <fieldset class="choice__additional">
+        <fieldset class="additional__choice">
           <ul class="additional__list">
             <li class="additional__item">
               <label class="checkbox">
-                <input type="checkbox" name="additional" value="sweetener" class="checkbox__elem">
+                <input type="checkbox" name="additional" value="sweetener" class="checkbox__elem" checked>
                 <div class="checkbox__visible"></div>
                 <div class="checkbox__title">сахарозаменитель</div>
               </label>
@@ -185,33 +187,42 @@
 
   </main>
 
-  <footer class="page__footer">
+  <footer class="footer">
     <div class="container footer__container">
-      <a href="index.html" class="footer__logo">
-        <img src="./img/logo/footer-logo.svg" width="128" height="24" alt="footer logo" class="footer__img">
-      </a>
+        <div class="footer__col"> 
+            <a href="main_page.html" class="logo">  
+                <img src="./img/logo/footer-logo.svg" alt="logo company" class="logo__img"> 
+            </a>
+        </div>
 
-      <ul class="socials">
-        <li class="socials__item socials__item--icon--vk">
-          <a href="#" class="socials__link">vk</a>
-        </li>
-        <li class="socials__item socials__item--icon--inst">
-          <a href="#" class="socials__link">inst</a>
-        </li>
-        <li class="socials__item socials__item--icon--fb">
-          <a href="#" class="socials__link">fb</a>
-        </li>
-      </ul>
+        <div class="footer__socials">
+            <ul class="socials__list">
+                <li class="socials__item socials__item--icon--vk">
+                    <a href="https://vk.com/marysa3015" class="socials__link">
+                      <img src="./img/socials/icon_vkontakte.svg" alt="vk icon" class="social__icon">
+                    </a>
+                </li>
+                <li class="socials__item socials__item--icon--inst">
+                    <a href="https://ru-ru.facebook.com/" class="socials__link">
+                      <img src="./img/socials/icon_instagram.svg" alt="instagram icon" class="social__icon">
+                    </a>
+                </li>
+                <li class="socials__item socials__item--icon--fb">
+                    <a href="https://www.instagram.com/" class="socials__link">
+                      <img src="./img/socials/icon_facebook.svg" alt="facebook icon" class="social__icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-      <div class="authors">
-        <span class="author">HTML Academy</span>
-        <a href="#" class="author__logo">
-          <img src="./img/logo/logo html.svg" alt="author__logo" class="author__img">
-        </a>
-      </div>
-
+        <div class="footer__copyright">
+          <div class="copyright__text">HTML Academy</div>
+          <a href="index.html" class="copyright__logo">
+            <img src="./img/logo/html__logo.svg" alt="html logo" class="img__logo">
+          </a>
+        </div>
     </div>
-  </footer>
+    </footer>
 </div>
 
 </body>
